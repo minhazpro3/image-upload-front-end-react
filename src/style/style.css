@@ -1,0 +1,72 @@
+/* file input component */
+.choose_btn {
+  margin-top: 30px;
+  color: white;
+  background-color: rgb(2, 77, 2);
+  padding: 10px;
+  border: none;
+}
+
+/* img cropper component */
+.action-btns {
+  flex: flex;
+  margin: auto;
+  margin-top: 1%;
+}
+
+.shadow_frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.shadow_btn:hover {
+  cursor: pointer;
+}
+
+.original_btn {
+  font-size: small;
+  border: 1px solid green;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.shadow_frame {
+  display: flex;
+  margin: auto;
+  margin-top: 35%;
+}
+
+/* app component  */
+.after_crop {
+  display: flex;
+  margin: auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 25px;
+  box-shadow: inset 0px 0px 80px 60px rgba(0, 0, 0, 0.5);
+}
+.cropped_img {
+  width: 300px;
+  height: 300px;
+
+  border-radius: 25px;
+}
+
+.cropped_img:nth-of-type(2) {
+  transform: scale(1.03);
+  filter: blur(100px);
+  position: absolute;
+  z-index: -2;
+}
+
+.btn {
+  color: white;
+  background-color: rgb(78, 117, 20);
+  border-radius: 8px;
+  border: none;
+  margin: 4px;
+  padding: 8px;
+  cursor: pointer;
+}
