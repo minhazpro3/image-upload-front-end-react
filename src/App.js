@@ -72,8 +72,34 @@ function App() {
         ) : (
           <div>
             <div style={{ margin: "23px" }}>
-              <div className="after_crop">
-                <img src={imgAfterCrop} className="cropped_img" alt="" />
+              <div
+                className={`${
+                  shadowType === "love"
+                    ? "after_crop_love"
+                    : shadowType === "square"
+                    ? "after_crop_square"
+                    : shadowType === "circle"
+                    ? "after_crop_circle"
+                    : shadowType === "rectangle"
+                    ? "after_crop_rectangle"
+                    : "after_crop"
+                }`}
+              >
+                <img
+                  src={imgAfterCrop}
+                  className={`${
+                    shadowType === "love"
+                      ? "crop_love"
+                      : shadowType === "square"
+                      ? "crop_square"
+                      : shadowType === "circle"
+                      ? "crop_circle"
+                      : shadowType === "rectangle"
+                      ? "crop_rectangle"
+                      : "crop"
+                  }`}
+                  alt=""
+                />
               </div>
             </div>
 
